@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/llMessageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btnReload"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:text="@string/exclamation_mark"
+            android:textColor="@color/orange_light" />
+
+        <com.pyco.android.jiramobileclient.widgets.TextViewExtend
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/lblMessageNotice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load_failed"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/text_title_size"
+            android:textStyle="bold"
+            app:customFont="fonts/AvantGarde-Bold.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ProgressBar
+            android:id="@+id/pgbLoading"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</merge>

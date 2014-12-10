@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="7dip">
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/txtIssueId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgIcon"
+        android:ellipsize="end"
+        android:paddingLeft="5dip"
+        android:paddingRight="50dip"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/text_title_size"
+        android:text="JMA-6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnIssueStatus"
+        android:layout_alignParentRight="true"
+        android:text="Open" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnIssueStatus"
+        android:ellipsize="end"
+        android:paddingLeft="5dip"
+        android:paddingRight="50dip"
+        android:singleLine="true"
+        android:textColor="@color/main_color"
+        android:textSize="@dimen/text_title_size"
+        android:text="Issue title here" />
+
+</RelativeLayout>

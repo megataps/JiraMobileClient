@@ -1,0 +1,58 @@
+buildscript {
+    repositories {
+//        maven { url 'http://download.crashlytics.com/maven' }
+        mavenCentral()
+    }
+
+    dependencies {
+//        classpath 'com.crashlytics.tools.gradle:crashlytics-gradle:1.+'
+        classpath 'com.android.tools.build:gradle:1.0.0-rc2'
+        classpath 'org.robolectric:robolectric-gradle-plugin:0.14.+'
+    }
+}
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'robolectric'
+
+repositories {
+//    maven { url 'http://download.crashlytics.com/maven' }
+    jcenter()
+    mavenCentral()
+}
+
+tasks.withType(Test) {
+    scanForTestClasses = false
+    include "**/*Test.class" // whatever Ant pattern matches your test class files
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    defaultConfig {
+        applicationId "com.pyco.android.jiramobileclient"
+        minSdkVersion 17
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile 'junit:junit:4.+'
+    compile 'com.android.support:appcompat-v7:21.0.2'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'
+    compile 'com.google.code.gson:gson:2.2.+'
+    compile 'com.android.support:support-v4:21.0.2'
+    compile 'joda-time:joda-time:2.3'
+    compile 'com.mcxiaoke.volley:library:1.0.+'
+    androidTestCompile 'org.robolectric:robolectric:2.4'
+}

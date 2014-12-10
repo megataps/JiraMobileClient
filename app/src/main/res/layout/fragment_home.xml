@@ -1,0 +1,33 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipe_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pyco.android.jiramobileclient.fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lvIssues"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@color/transparent"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/transparent"
+            android:dividerHeight="5dip"
+            android:groupIndicator="@color/transparent"
+            android:scrollbars="none"
+            android:layout_marginBottom="5dip" />
+
+        <include
+            android:id="@+id/llWaitingLayout"
+            layout="@layout/view_waiting_loading"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

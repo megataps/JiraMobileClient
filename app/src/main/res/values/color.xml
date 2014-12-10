@@ -1,0 +1,17 @@
+<resources>
+
+    <color name="red">#990000</color>
+    <color name="green">#009900</color>
+    <color name="blue">#000099</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_light">#2C2C2C</color>
+    <color name="orange">#ff7b2d</color>
+    <color name="orange_light">#FFA638</color>
+    <color name="gray">#ababab</color>
+    <color name="gray_light">#F6F6F6</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="main_color">#0066cc</color>
+
+</resources>

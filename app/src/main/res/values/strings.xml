@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jira Client</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Screen Title -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- General String -->
+    <string name="popup_title">Message</string>
+    <string name="ok">OK</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="exclamation_mark">!</string>
+    <string name="load_failed">Loading failed. Try Again!</string>
+
+    <!-- Login -->
+    <string name="username_required">Please input username.</string>
+    <string name="password_required">Please input password.</string>
+    <string name="login_failure">Login failure. Please try again.</string>
+
+</resources>
