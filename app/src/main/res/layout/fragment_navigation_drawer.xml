@@ -6,4 +6,4 @@
     android:divider="@color/white"
     android:dividerHeight="1dp"
     android:background="@color/black_light"
-    tools:context="com.pyco.android.jiramobileclient.activities.NavigationDrawerFragment" />
+    tools:context="com.pyco.android.jiramobileclient.fragments.NavigationDrawerFragment" />

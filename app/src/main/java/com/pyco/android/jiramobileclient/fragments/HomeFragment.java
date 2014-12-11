@@ -8,6 +8,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AbsListView;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -102,6 +103,24 @@ public class HomeFragment extends Fragment implements IBaseService, SwipeRefresh
 
         mService = JiraService.getInstance();
         mService.setListener(this);
+
+        /*
+         * http://nlopez.io/swiperefreshlayout-with-listview-done-right/
+         */
+        mLvIssues.setOnScrollListener(new AbsListView.OnScrollListener() {
+            @Override
+            public void onScrollStateChanged(AbsListView view, int scrollState) {
+
+            }
+
+            @Override
+            public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
+                int topRowVerticalPosition =
+                        (mLvIssues == null || mLvIssues.getChildCount() == 0) ?
+                                0 : mLvIssues.getChildAt(0).getTop();
+                swipeLayout.setEnabled(topRowVerticalPosition >= 0);
+            }
+        });
 
         return rootView;
     }

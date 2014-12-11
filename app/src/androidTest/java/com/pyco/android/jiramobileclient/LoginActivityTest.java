@@ -52,6 +52,6 @@ public class LoginActivityTest {
 
     @Test
     public void testLoginButtonClick() throws Exception {
-        
+        btnLogin.performClick();
     }
 }

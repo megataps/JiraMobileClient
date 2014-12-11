@@ -12,6 +12,7 @@ import com.pyco.android.jiramobileclient.BaseApplication;
 import com.pyco.android.jiramobileclient.R;
 import com.pyco.android.jiramobileclient.entities.UserEntity;
 import com.pyco.android.jiramobileclient.fragments.HomeFragment;
+import com.pyco.android.jiramobileclient.fragments.NavigationDrawerFragment;
 import com.pyco.android.jiramobileclient.services.AssignedToMeFilter;
 import com.pyco.android.jiramobileclient.services.IIssueFilter;
 import com.pyco.android.jiramobileclient.services.RecentlyViewedFilter;

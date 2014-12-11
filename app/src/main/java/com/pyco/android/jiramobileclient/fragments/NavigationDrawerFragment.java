@@ -1,4 +1,4 @@
-package com.pyco.android.jiramobileclient.activities;
+package com.pyco.android.jiramobileclient.fragments;
 
 import android.app.Activity;
 import android.content.SharedPreferences;
