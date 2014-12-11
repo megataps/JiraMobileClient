@@ -39,8 +39,6 @@ public class LoginActivity extends ActionBarActivity {
             }
         });
 
-        mTxtUsername.setText("tinh.nguyen");
-        mTxtPassword.setText("2wsxXSW@");
     }
 
     /**
