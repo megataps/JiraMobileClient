@@ -49,4 +49,9 @@ public class LoginActivityTest {
         Assert.assertNotNull(txtUsernname);
         Assert.assertNotNull(txtPassword);
     }
+
+    @Test
+    public void testLoginButtonClick() throws Exception {
+        
+    }
 }
